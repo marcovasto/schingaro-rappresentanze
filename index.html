@@ -24,8 +24,8 @@
         navbar
     -->
 
-    <header>
-        <nav class="navbar navbar-expand-lg sticky-top">
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
                     SCHINGARO RAPPRESENTANZE
@@ -35,7 +35,7 @@
                         data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" 
                         aria-label="Toggle navigation">
                     <span class="">
-                        <i class="fa-solid fa-link"></i>
+                        <i class="fa-solid fa-bars"></i>
                     </span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -43,7 +43,7 @@
                         <a class="nav-link" href="#about">
                             Chi Siamo
                         </a>
-                        <a class="nav-link" href="#services">
+                        <a class="nav-link" href="#service">
                             Servizi
                         </a>
                         <a class="nav-link" href="https://it.linkedin.com/" target="_blank">
@@ -70,20 +70,48 @@
                 Siamo molto più di semplici fornitori di tessuti, siamo creatori di opportunità. La nostra profonda conoscenza del settore ci permette di offrirvi soluzioni che aumenteranno la vostra competitività. Contattateci per scoprire come possiamo trasformare il vostro business e creare vantaggi tangibili per voi.
             </p>
 
-            <div class="d-grid gap-2 d-md-block mx-3">
-                <button class="btn btn-primary btn-lg px-4" type="button">
-                    <i class="fa-solid fa-phone"></i>
-                    Chiama ora
-                </button>
-                <button class="btn btn-dark btn-lg px-4" type="button">
-                    <i class="fa-solid fa-envelope"></i>
-                    Manda una mail
+            <div class="d-grid d-md-block gap-2">
+                <!-- <button class="btn btn-primary" type="button">
+                    <a href="tel:+393662267938">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>
+                            Chiama ora
+                        </span>
+                    </a>
+                </button> -->
+
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-primary">
+                        <a href="tel:+393662267938">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>
+                                Dario
+                            </span>
+                        </a>
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                        <a href="tel:+393662267938">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>
+                                Filippo
+                            </span>
+                        </a>
+                    </button>
+                </div>
+
+                <button class="btn btn-secondary" type="button">
+                    <a href="tel:+393662267938">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>
+                            Manda una mail
+                        </span>
+                    </a>
                 </button>
             </div>
         </div>
     </section>
 
-    <section>
+    <main>
 
         <!-- 
             about us 
@@ -102,7 +130,7 @@
                 group cards
             -->
 
-            <div class="about-card bg-card my-5">
+            <div class="about-card my-5">
                 <div class="row g-0 d-flex justify-content-between">
                     <div class="col-lg-7 d-flex align-items-center">
                         <div class="p-5">
@@ -120,7 +148,7 @@
                 </div>
             </div>
 
-            <div class="about-card bg-card my-5">
+            <div class="about-card my-5">
                 <div class="row g-0 d-flex justify-content-between">
                     <div class="col-lg-7 d-flex align-items-center">
                         <div class="p-5">
@@ -138,7 +166,7 @@
                 </div>
             </div>
 
-            <div class="about-card bg-card my-5">
+            <div class="about-card my-5">
                 <div class="row g-0 d-flex justify-content-between">
                     <div class="col-lg-7 d-flex align-items-center">
                         <div class="p-5">
@@ -156,7 +184,7 @@
                 </div>
             </div>
 
-            <div class="about-card bg-card my-5">
+            <div class="about-card my-5">
                 <div class="row g-0 d-flex justify-content-between">
                     <div class="col-lg-7 d-flex align-items-center">
                         <div class="p-5">
@@ -174,7 +202,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </main>
 
     <section>
 
@@ -182,7 +210,7 @@
             services
         -->
 
-        <div class="container py-5" id="services">
+        <div class="container py-5" id="service">
             <h2>
                 Servizi
             </h2>
@@ -190,10 +218,44 @@
                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nihil odio non amet. Harum nisi similique dolore, recusandae temporibus culpa quas voluptates fugit vero vitae, iusto sunt dolor dicta quisquam.
             </p>
 
-            <div class="row">
+            <div class="service-grid">
+
+                <div class="service-card p-4">
+                    <h4>
+                        <i class="fa-solid fa-ship"></i>
+                        Spedizioni Internazionali
+                    </h4>
+                    <p class="paragraph-height">
+                        Grazie alla nostra rete di magazzini presenti in tutta Italia e a un'efficiente logistica, assicuriamo spedizioni rapide e sicure verso qualsiasi destinazione nel mondo.
+                    </p>
+                </div>
+
+                <div class="service-card p-4">
+                    <h4>
+                        <i class="fa-solid fa-handshake-angle"></i>
+                        Assistenza Personalizzata
+                    </h4>
+                    <p class="paragraph-height">
+                        Siamo sempre a disposizione per offrirvi un supporto dedicato e su misura. Il nostro team vi accompagna in ogni fase, assicurando che tutte le vostre esigenze siano soddisfatte.
+                    </p>
+                </div>
+
+                <div class="service-card p-4">
+                    <h4>
+                        <i class="fa-solid fa-boxes-stacked"></i>
+                        Ampia Gamma Prodotti
+                    </h4>
+                    <p class="paragraph-height">
+                        Oltre ai tessuti, proponiamo una vasta selezione di prodotti per rispondere a ogni richiesta, garantendo sempre qualità e varietà per i vostri progetti.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- <div class="row">
                 <div class="col-xl my-3">
-                    <div class="service-card bg-card p-4">
-                        <div class="card-body">
+                    <div class="service-card shadow p-4">
+                        <div>
                             <h4>
                                 <i class="fa-solid fa-ship"></i>
                                 Spedizioni Internazionali
@@ -205,8 +267,8 @@
                     </div>
                 </div>
                 <div class="col-xl my-3">
-                    <div class="service-card bg-card p-4">
-                        <div class="card-body">
+                    <div class="service-card shadow p-4">
+                        <div>
                             <h4>
                                 <i class="fa-solid fa-handshake-angle"></i>
                                 Assistenza Personalizzata
@@ -218,8 +280,8 @@
                     </div>
                 </div>
                 <div class="col-xl my-3">
-                    <div class="service-card bg-card p-4">
-                        <div class="card-body">
+                    <div class="service-card shadow p-4">
+                        <div>
                             <h4>
                                 <i class="fa-solid fa-boxes-stacked"></i>
                                 Ampia Gamma Prodotti
@@ -230,7 +292,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
+
         </div>
     </section>
 
@@ -263,6 +326,7 @@
     
                         <div class="d-grid">
                             <button type="submit" class="btn btn-lg btn-primary btn-block">
+                                <i class="fa-regular fa-circle-check"></i>
                                 Invia il messaggio
                             </button>
                         </div>
@@ -294,7 +358,27 @@
                 </div>
 
                 <div class="col-md d-grid gap-2">
-                    <button class="btn btn-primary" type="button">
+
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-primary">
+                            <a href="tel:+393662267938">
+                                <i class="fa-solid fa-phone"></i>
+                                <span>
+                                    Dario
+                                </span>
+                            </a>
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                            <a href="tel:+393662267938">
+                                <i class="fa-solid fa-phone"></i>
+                                <span>
+                                    Filippo
+                                </span>
+                            </a>
+                        </button>
+                    </div>
+
+                    <!-- <button class="btn btn-primary" type="button">
                         <a href="tel:+393662267938">
                             <i class="fa-solid fa-phone"></i>
                             <span>
@@ -310,9 +394,9 @@
                                 Filippo
                             </span>
                         </a>
-                    </button>
+                    </button> -->
 
-                    <button class="btn btn-dark" type="button">
+                    <button class="btn btn-secondary" type="button">
                         <a href="tel:+393662267938">
                             <i class="fa-solid fa-envelope"></i>
                             <span>

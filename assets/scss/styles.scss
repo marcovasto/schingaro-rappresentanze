@@ -70,18 +70,27 @@ nav {
     }
 }
 
-.service-card {
-    max-height: 60vh;
-    overflow: hidden;
+.service-grid {
+    display: grid;
+    gap: 1rem;
 
+    @media (min-width: 1200px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.service-card {
     background-color: rgba($primary-color, 0.1);
-    border: none;
     border-radius: 1rem;
+    transition: 0.3s;
 
     &:hover {
         background-color: rgba($primary-color, 0.7);
-        transition: 0.3s;
-        color: white;
+        color: $light-color;
+    }
+
+    p {
+        font-size: $font-size-small;
     }
 }
 
@@ -110,10 +119,5 @@ nav {
 }
 
 footer {
-    background-color: rgba($primary-color, 0.1);
-
-    a {
-        text-decoration: none;
-        color: white;
-    }
+    background-color: rgba($primary-color, 0.1);;
 }
