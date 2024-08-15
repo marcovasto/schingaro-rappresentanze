@@ -1,0 +1,91 @@
+$primary-color: #005EFF;
+$secondary-color: #212529;
+$base-background: #F4F4F9;
+$alternative-background: #E8EAF6;
+
+$font-stack: 'Poppins', sans-serif;
+
+$font-regular: 400;
+$font-medium: 500;
+$font-bold: 700;
+
+$font-size-h1: clamp(1.5rem, 1rem + 2vw, 4rem);
+$font-size-h2: clamp(1.25rem, 1rem + 2vw, 2.5rem);
+$font-size-h3: clamp(1.125rem, 0.9rem + 1.2vw, 1.75rem);
+$font-size-h4: clamp(0.875rem, 0.75rem + 0.9vw, 1.2rem);
+$font-size-p: clamp(1rem, 0.75rem + 1vw, 1.5rem);
+$font-size-a: clamp(1rem, 0.75rem + 1vw, 1.5rem);
+$font-size-li: clamp(0.8rem, 0.7rem + 0.95vw, 1.3rem);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $base-background;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-weight: $font-bold;
+    font-size: $font-size-h1;
+
+    // colors gradient
+    background-image: linear-gradient($base-background, $alternative-background);
+    color: transparent;
+    background-clip: text;
+}
+
+h2 {
+    font-weight: $font-bold;
+    font-size: $font-size-h2;
+}
+
+h3 {
+    font-weight: $font-medium;
+    font-size: $font-size-h3;
+}
+
+h4 {
+    font-weight: $font-medium;
+    font-size: $font-size-h4;
+}
+
+p {
+    font-weight: $font-regular;
+    font-size: $font-size-p;
+}
+
+a {
+    font-weight: $font-medium;
+    font-size: $font-size-a;
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+    color: $secondary-color;
+
+    &:hover,
+    &:focus {
+        color: lighten($secondary-color, 10%);
+    }
+
+    &:active {
+        color: lighten($secondary-color, 20%);
+    }
+}
+
+li {
+    font-weight: $font-regular;
+    font-size: $font-size-li;
+}
+
+span {
+    font-weight: $font-regular;
+    font-size: $font-size-p;
+}

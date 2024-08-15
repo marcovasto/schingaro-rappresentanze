@@ -1,0 +1,119 @@
+@import "config";
+@import "buttons";
+@import "scrollbar";
+
+nav {
+    min-height: 60px;
+}
+
+.hero {
+    // height: 90vh;
+    // min-height: 100vh;
+
+    min-height: calc(100vh - 60px);
+
+    background-color: $primary-color;
+    background-image: url("/assets/images/colors.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-blend-mode: multiply;
+    color: white;
+}
+
+nav {
+    background-color: white;
+    color: $primary-color;
+
+    .navbar-brand {
+        color: $primary-color;
+        font-weight: 700;
+        font-size: clamp(1rem, 4vw, 1.5rem);
+
+        &:hover {
+            color: $primary-color;
+        }
+    }
+
+    .nav-link {
+        color: $secondary-color;
+        font-size: 1rem;
+
+        &:hover {
+            color: $primary-color;
+        }
+    }
+}
+
+.about-card {
+    overflow: hidden;
+
+    background-color: rgba($primary-color, 0.1);
+    border: none;
+    border-radius: 1rem;
+
+    &:hover {
+        background-color: rgba($primary-color, 0.7);
+        transition: 0.3s;
+        color: white;
+    }
+
+    @media screen and (max-width: 991px) {
+        max-height: 30rem;
+        img {
+            /*  without position-relative I can set a max-width of 400px */
+            position: relative;
+            bottom: 15%;
+            z-index: -1;
+        }
+    }
+}
+
+.service-card {
+    max-height: 60vh;
+    overflow: hidden;
+
+    background-color: rgba($primary-color, 0.1);
+    border: none;
+    border-radius: 1rem;
+
+    &:hover {
+        background-color: rgba($primary-color, 0.7);
+        transition: 0.3s;
+        color: white;
+    }
+}
+
+.contact-form {
+    overflow: hidden;
+    max-height: 30rem;
+
+    background-color: rgba($primary-color, 0.1);
+    border: none;
+    border-radius: 1rem;
+
+    p {
+        font-weight: 400;
+        font-size: clamp(0.9rem, 5vw, 1.1rem);
+    }
+
+    img {
+        height: 50rem;
+    }
+
+    @media screen and (max-width: 991px) {
+        img {
+            display: none;
+        }
+    }
+}
+
+footer {
+    background-color: rgba($primary-color, 0.1);
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}

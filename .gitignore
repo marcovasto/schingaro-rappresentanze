@@ -1,0 +1,23 @@
+# Ignora file di sistema
+.DS_Store
+
+# Ignora file generati dall'editor
+*.log
+*.tmp
+.vscode/
+
+# Ignora dipendenze di Node.js
+node_modules/
+
+# Ignora file di build
+dist/
+build/
+
+# Ignora altri file di sistema e temporanei
+*.swp
+*.swo
+*.bak
+*.orig
+
+# Ignora cartelle di configurazione dell'editor
+.idea/

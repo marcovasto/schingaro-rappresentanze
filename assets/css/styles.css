@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F4F4F9;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: clamp(1.5rem, 1rem + 2vw, 4rem);
+  background-image: linear-gradient(#F4F4F9, #E8EAF6);
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: clamp(1.25rem, 1rem + 2vw, 2.5rem);
+}
+
+h3 {
+  font-weight: 500;
+  font-size: clamp(1.125rem, 0.9rem + 1.2vw, 1.75rem);
+}
+
+h4 {
+  font-weight: 500;
+  font-size: clamp(0.875rem, 0.75rem + 0.9vw, 1.2rem);
+}
+
+p {
+  font-weight: 400;
+  font-size: clamp(1rem, 0.75rem + 1vw, 1.5rem);
+}
+
+a {
+  font-weight: 500;
+  font-size: clamp(1rem, 0.75rem + 1vw, 1.5rem);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  color: #212529;
+}
+a:hover, a:focus {
+  color: #383f45;
+}
+a:active {
+  color: #4e5862;
+}
+
+li {
+  font-weight: 400;
+  font-size: clamp(0.8rem, 0.7rem + 0.95vw, 1.3rem);
+}
+
+span {
+  font-weight: 400;
+  font-size: clamp(1rem, 0.75rem + 1vw, 1.5rem);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0.7rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0, 94, 255, 0.1);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 94, 255, 0.4);
+  border-radius: 1rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 94, 255, 0.7);
+}
+
+nav {
+  min-height: 60px;
+}
+
+.hero {
+  min-height: calc(100vh - 60px);
+  background-color: #005EFF;
+  background-image: url("/assets/images/colors.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  color: white;
+}
+
+nav {
+  background-color: white;
+  color: #005EFF;
+}
+nav .navbar-brand {
+  color: #005EFF;
+  font-weight: 700;
+  font-size: clamp(1rem, 4vw, 1.5rem);
+}
+nav .navbar-brand:hover {
+  color: #005EFF;
+}
+nav .nav-link {
+  color: #212529;
+  font-size: 1rem;
+}
+nav .nav-link:hover {
+  color: #005EFF;
+}
+
+.about-card {
+  overflow: hidden;
+  background-color: rgba(0, 94, 255, 0.1);
+  border: none;
+  border-radius: 1rem;
+}
+.about-card:hover {
+  background-color: rgba(0, 94, 255, 0.7);
+  transition: 0.3s;
+  color: white;
+}
+@media screen and (max-width: 991px) {
+  .about-card {
+    max-height: 30rem;
+  }
+  .about-card img {
+    /*  without position-relative I can set a max-width of 400px */
+    position: relative;
+    bottom: 15%;
+    z-index: -1;
+  }
+}
+
+.service-card {
+  max-height: 60vh;
+  overflow: hidden;
+  background-color: rgba(0, 94, 255, 0.1);
+  border: none;
+  border-radius: 1rem;
+}
+.service-card:hover {
+  background-color: rgba(0, 94, 255, 0.7);
+  transition: 0.3s;
+  color: white;
+}
+
+.contact-form {
+  overflow: hidden;
+  max-height: 30rem;
+  background-color: rgba(0, 94, 255, 0.1);
+  border: none;
+  border-radius: 1rem;
+}
+.contact-form p {
+  font-weight: 400;
+  font-size: clamp(0.9rem, 5vw, 1.1rem);
+}
+.contact-form img {
+  height: 50rem;
+}
+@media screen and (max-width: 991px) {
+  .contact-form img {
+    display: none;
+  }
+}
+
+footer {
+  background-color: rgba(0, 94, 255, 0.1);
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
