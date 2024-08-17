@@ -42,7 +42,8 @@ p {
   font-size: clamp(1rem, 0.75rem + 1vw, 1.5rem);
 }
 
-a {
+a,
+span {
   font-weight: 400;
   font-size: clamp(1rem, 0.75rem + 1vw, 1.5rem);
   text-decoration: none;
