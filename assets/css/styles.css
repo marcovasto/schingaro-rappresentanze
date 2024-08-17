@@ -24,6 +24,7 @@ h1 {
 h2 {
   font-weight: 700;
   font-size: clamp(1.25rem, 1rem + 2vw, 2.5rem);
+  color: #005EFF;
 }
 
 h3 {
@@ -86,22 +87,7 @@ a {
 
 nav {
   min-height: 60px;
-}
-
-.hero {
-  min-height: calc(100vh - 60px);
-  background-color: #005EFF;
-  background-image: url("/assets/images/colors.webp");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-blend-mode: multiply;
-  color: white;
-}
-
-nav {
-  background-color: white;
-  color: #005EFF;
+  background-color: #F4F4F9;
 }
 nav .navbar-brand {
   color: #005EFF;
@@ -119,16 +105,27 @@ nav .nav-link:hover {
   color: #005EFF;
 }
 
+.hero {
+  min-height: calc(100vh - 60px);
+  background-image: url("/assets/images/colors.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #005EFF;
+  background-blend-mode: multiply;
+  color: #F4F4F9;
+}
+
 .about-card {
   overflow: hidden;
   background-color: rgba(0, 94, 255, 0.1);
   border: none;
   border-radius: 1rem;
+  transition: 0.3s ease;
 }
 .about-card:hover {
   background-color: rgba(0, 94, 255, 0.7);
-  transition: 0.3s;
-  color: white;
+  color: #F4F4F9;
 }
 @media screen and (max-width: 991px) {
   .about-card {
@@ -155,7 +152,7 @@ nav .nav-link:hover {
 .service-card {
   background-color: rgba(0, 94, 255, 0.1);
   border-radius: 1rem;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 .service-card:hover {
   background-color: rgba(0, 94, 255, 0.7);
