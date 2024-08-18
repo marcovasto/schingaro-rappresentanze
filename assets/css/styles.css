@@ -42,8 +42,7 @@ p {
   font-size: clamp(1rem, 0.75rem + 1vw, 1.5rem);
 }
 
-a,
-span {
+a {
   font-weight: 400;
   font-size: clamp(1rem, 0.75rem + 1vw, 1.5rem);
   text-decoration: none;
@@ -53,6 +52,10 @@ span {
 .btn {
   border-radius: 1rem;
   padding: 0.5rem 1.5rem;
+  color: #F4F4F9;
+}
+.btn a {
+  color: #F4F4F9;
 }
 
 .btn-primary {
@@ -135,7 +138,7 @@ nav .nav-link:hover {
   .about-card img {
     /*  without position-relative I can set a max-width of 400px */
     position: relative;
-    bottom: 15%;
+    bottom: 25%;
     z-index: -1;
   }
 }
